@@ -1,0 +1,53 @@
+<html>
+ 
+  <head>
+
+     <link rel="stylesheet" type="text/css" href="stylos.css" />
+
+    <title>Login</title>
+
+  </head>
+
+        <body>
+
+         <script>
+           const usuarios = [
+           {"login": "mario", "senha": "123"},
+           {"login": "alisson", "senha": "321"},
+           {"login": "tips", "senha": "300"},
+           ];
+
+    function Login() {
+    let usuario = document.getElementsByName('usuario')[0].value.toLowerCase();
+    let senha = document.getElementsByName('senha')[0].value;
+
+    for (let u in usuarios) {
+        let us = usuarios[u];
+        if (us.login === usuario && us.senha === senha) {
+          alert("Dados corretos.");
+            return true;
+        }
+    }
+    alert("Dados incorretos, tente novamente.");
+    return false;
+}
+          </script>
+            
+
+     
+              <div class="login">
+                        <h1>Login</h1>
+                       <form name="formulario">
+                      <input type="text" name="usuario" placeholder="usuario" />
+                      <input type="password" name="senha" placeholder="senha" />
+                      <button onclick="return Login()">logar</button>
+                  </form>     
+
+              </div>
+
+
+        </body>
+  
+
+</html>
+

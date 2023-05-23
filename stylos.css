@@ -1,0 +1,32 @@
+*{
+text-align: center;
+}
+
+h1
+{
+text-align: center;
+padding-top: 20px;
+}
+
+.login
+{
+width: 400px;
+height: 300px;
+margin:100px auto;
+border-radius: 10px;
+background-color:blanchedalmond;
+}
+
+form input
+{
+width:200px;
+display:block;
+margin:auto auto 3px;
+padding: 7px;
+}
+
+form button
+{
+width: 200px;
+padding: 7px;
+}
